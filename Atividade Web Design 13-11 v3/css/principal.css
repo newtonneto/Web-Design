@@ -1,0 +1,214 @@
+* {
+	background-color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header h1 {
+	background: url("../img/banner3.png");
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #4DFF4D;
+	text-align: center;
+	height: 200px;
+	width: 100%;
+}
+
+header img {
+	max-width: 100%;
+}
+
+header nav ol {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	border: 1px solid green;
+}
+
+header nav ol a {
+	text-decoration: none;
+	color: #4DFF4D;
+}
+
+header nav ol li {
+	display: inline-block;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 0.25em;
+	font-size: 2em;
+}
+
+header nav ol li:hover {
+	background-color: #4DFF4D;
+	color: black;
+}
+
+header form input {
+	background-color: #4DFF4D;
+	float: right;
+	margin-top: -250px;
+	margin-right: 2%;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+main {
+	width: 60%;
+	margin: 0 auto;
+}
+
+main section h2 {
+	color: #4DFF4D;
+	margin: 0.25em;
+	padding-left: 0.25em;
+}
+
+main section p {
+	color: #4DFF4D;
+	font-weight: bold;
+	padding: 0.25em;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+aside {
+	background-color: rbga(0, 0, 0, 1);
+	position: fixed;
+	width: 12%;
+	margin-left: 7%;
+}
+
+aside a {
+	text-decoration: none;
+}
+
+aside h2 {
+	background-color: #4DFF4D;
+	color: black;
+	font-size: 1em;
+	text-align: center;
+}
+
+aside ol {
+	border: 1px solid green;
+	/*margin-top: -37.7%;
+	margin-left: 2.6em;*/
+	font-size: 1em;
+}
+
+aside ol a {
+	text-decoration: none;
+	color: #4DFF4D;
+}
+
+aside ol a li:hover {
+	background-color: #4DFF4D;
+	color: black;
+}
+
+aside ol a li {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+aside form {
+	/*border: 1px solid green;*/
+	/*margin-left: 2.6em;*/
+	/*font-size: 5em;*/
+}
+
+aside form label input {
+	background-color: #4DFF4D;
+	height: 1.5em;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	width: 98%;
+}
+
+aside form input {
+	background-color: #4DFF4D;
+	width: 100%;
+	margin-top: 0.25em;
+	height: 2em;
+}
+
+footer {
+	margin-top: 5em;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+}
+
+#contact {
+	width: 30%;
+	height: 150px;
+	display: inline-block;
+	/*float: left;*/
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#contact form {
+	text-align: left;
+	position: absolute;
+	width: 12.5%;
+	height: 150px;
+	margin-left: 17.5%;
+}
+
+#contact form label {
+	display: inline-block;
+	color: #4DFF4D;
+	width: 30%;
+}
+
+#contact form input {
+	color: #4DFF4D;
+	width: 65%;
+}
+
+#contact form textarea {
+	color: #4DFF4D;
+	width: 98.9%;
+	height: 70%;
+}
+
+#address {
+	color: #4DFF4D;
+	width: 30%;
+	height: 150px;
+	display: inline-block;
+	/*float: left;*/
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#address address {
+	text-align: left;
+	position: absolute;
+	width: 18%;
+	margin-left: 12%;
+}
+
+#socialmedia {
+	color: #4DFF4D;
+	width: 30%;
+	height: 150px;
+	display: inline-block;
+	/*float: left;*/
+	margin-left: 1%;
+	margin-right: 1%;
+	
+}
+
+#socialmedia nav {
+	position: absolute;
+	text-align: right;
+}
+
+footer div nav ol li img {
+	max-width: 35%;
+	max-height: 35%;
+}

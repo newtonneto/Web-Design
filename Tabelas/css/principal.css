@@ -1,0 +1,66 @@
+/*CSS TABELA 1*/
+
+h2.h2t1 {
+	background-color: rgb(31, 143, 193);
+	padding: 1em;
+	padding-left: 0.5em;
+	color: white;
+}
+
+table.tablet1 {
+	border-spacing: 0 0.25em;
+	width: 100%;
+}
+
+thead.theadt1 th {
+	padding-top: 0.5em;
+	padding-bottom: 1.5em;
+	padding-left: 0.75em;
+	text-align: left;
+}
+
+tbody.tbodyt1 td {
+	padding: 0.75em;
+	background-color: rgb(218, 244, 207);
+}
+
+tbody.tbodyt1 td.ajusteTecnico {
+	border-right: solid 0.5em;
+	border-color: white;
+}
+
+/*CSS TABELA 2*/
+
+#tabela2 h2 {
+	border: solid 0.10em;
+	border-color: rgb(233,233,233);
+	padding: 1em;
+	padding-left: 0.5em;
+	color: rgb(129, 223, 207);
+	font-family: Monotype Corsiva;
+}
+
+#tabela2 table {
+	border-spacing: 0 0.25em;
+	width: 100%;	
+}
+
+#tabela2 tbody tr:nth-child(odd) {
+	background-color: rgb(245, 245, 245);
+}
+
+#tabela2 tbody tr:nth-child(even) {
+	background-color: rgb(232, 232, 232);
+}
+
+#tabela2 tbody tr td {
+	padding: 0.75em;
+	color: rgb(143, 143, 143);
+}
+
+#tabela2 thead th {
+	text-align: left;
+	padding: 0.75em;
+	background-color: rgb(129, 223, 207);
+	color: rgb(9, 121, 99);
+}

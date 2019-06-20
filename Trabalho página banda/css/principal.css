@@ -1,0 +1,357 @@
+* {
+	background: black;
+}
+
+#logo img {
+	margin-top: 7em;
+	margin-bottom: -6em;
+	position: relative;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	/*position: absolute;
+	left: 50%;
+	top: 14%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)*/
+}
+
+header nav {
+	/*background: blue;*/
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+header nav ul {
+	display: flex;
+	/*display: flex;
+	position: relative;
+	align-items: center;
+  	justify-content: center;*/
+}
+
+header nav ul li {
+	list-style-type: none;
+	padding-right: 2em;
+	padding-left: 2em;
+	margin-bottom: -0.49em;
+	font-family: matura mt script capitals, forte;
+	font-size: 2em;
+	background: black;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: red;
+}
+
+header nav ul li a:hover {
+	color: white;
+	text-shadow: -2px 1px red;
+}
+
+#intro {
+	background-image: linear-gradient(to right, black , #00111A);
+	/*position: relative;*/
+	border-left: 0.2em solid white;
+	margin-top: 0em;
+	opacity: 0.8;
+	/*margin-left: 2.75em;
+	margin-right: 2.75em;*/
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-left: 1em;
+	font-family: matura mt script capitals, forte;
+	color: white;
+	text-shadow: -2px 1px red;
+}
+
+h1 {
+	/*background: #00111A;*/
+	background-image: linear-gradient(to right, black , #00111A);
+	/*position: relative;*/
+	border-left: 0.2em solid white;
+	margin-top: -1.45em;
+	opacity: 0.8;
+	/*margin-left: 2.75em;
+	margin-right: 2.75em;*/
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-left: 1em;
+	font-family: matura mt script capitals, forte;
+	color: white;
+	text-shadow: -2px 1px red;
+}
+
+h2 {
+	/*margin-left: 0.5em;*/
+	margin-left: 0.5em;
+	color: red;
+	font-family: matura mt script capitals, forte;
+	font-size: 3em;
+}
+
+hr {
+	border-color: red;
+	margin-left: 5.5em;
+	margin-right: 5.5em;
+}
+
+fieldset {
+	border-radius: 2em;
+}
+
+legend {
+	color: white;
+	margin-left: 2.7em;
+	font-family: matura mt script capitals, forte;
+	font-size: 2em;
+	text-shadow: -0.07em 0.07em red;
+}
+
+p {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	/*margin-right: 0.5em;
+	margin-left: 0.5em;*/
+	margin-right: 0em;
+	margin-left: 0em;
+	background: #00111A;
+	color: white;
+	text-align: justify;
+}
+
+table {
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	/*background-color: red;*/
+}
+
+tbody tr:nth-child(odd) {
+	/*background-color: black;*/
+	border: 0.2em solid red;
+	border-radius: 2em;
+
+}
+
+th {
+	padding: 1em;
+}
+
+td {
+	padding: 1em;
+}
+
+#discografia {
+	width: 100%;
+	/*background: blue;
+	border: 1px solid white;*/
+	/*o text-align center vai centralizar/justificar os elementos filhos*/
+	text-align: center;
+}
+
+#album {
+	/*float: left;*/
+	margin: 0.1em;
+	/*inline-block vai enfilerar os elementos até a margem direita da div, chegando no fim e restando elementos ele pula uma linha*/
+	display: inline-block;
+}
+
+#album img {
+	border-radius: 2em;
+}
+
+#galeria {
+	width: 100%;
+	text-align: center;
+}
+
+#foto {
+	display: inline-block;
+}
+
+#foto img {
+	border: 1em solid red;
+}
+
+ol.tracklist li {
+	color: white;
+}
+
+ul.side {
+	list-style-type: none;
+}
+
+ul.side li {
+	color: white;
+}
+
+form {
+	color: white;
+	/*margin-left: 5em;*/
+	margin-left: 0em;
+}
+
+form div {
+	/*margin: 0.5em;*/
+	margin-bottom: 0.5em;
+}
+
+label {
+	display: inline-block;
+	width: 5em;
+}
+
+input {
+	background: white;
+	/*border: 0.1em solid red;*/
+	border: none;
+	border-radius: 0.4em;
+	outline: none;
+}
+
+textarea {
+	background: white;
+	border: none;
+	border-radius: 0.4em;
+	outline: none;
+}
+
+#bg img {
+	max-width: 100%;
+}
+
+#main {
+	/*background: blue;*/
+	margin: 0 auto;
+	width: 90em;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 20%;
+	right: 20%;
+	left: 20%;
+	bottom: 20%;
+	background-color: rgba(0,0,0,0);
+	z-index: 9999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: none;
+	/*border: 1px solid white;*/
+}
+
+.modalDialogFoto {
+	position: fixed;
+	top: 10%;
+	right: 10%;
+	left: 10%;
+	bottom: 10%;
+	background-color: rgba(0,0,0,0);
+	z-index: 9999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: none;
+	/*border: 1px solid white;*/
+}
+
+.modalDialog:target {
+	display:block;
+	opacity: 0.9;
+	pointer-events: auto;
+}
+
+.modalDialogFoto:target {
+	display:block;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog div {
+	/*width e height definem o tamanho da div*/
+	width: 65.5em;
+	height: 15.625em;
+	/*left e top definem o posicionamento em relação ao topo e esquerda da div pai*/
+	left: 50%;
+	top: 50%;
+	/*para centralizar a div em questão, é necesario mover os margins left e top para a metade do tamanho da div (em valor negativo)*/
+	margin-left: -32.75em;
+	margin-top: -7.8125em;
+	/*por fim, defina o posicionamento como absoluto*/
+	position: absolute;
+	/*margin: 0% auto;*/
+	/*padding: 5px 20px 13px 20px;*/
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	/*border: 1px solid red;*/
+	/*background-color: rgba(0,0,0,0.7);*/
+	/*background-color: #fff;*/
+}
+
+.modalDialogFoto div {
+	width: 1080px;
+	height: 720px;
+	left: 50%;
+	top: 50%;
+	margin-left: -540px;
+	margin-top: -360px;
+	position: absolute;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.modalDialog div h1 {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.modalDialog div img {
+	float: left;
+	margin-left: 1em;
+	margin-right: 2em;
+}
+
+.modalDialog p {
+	/*margin-top: 5%;
+	margin-bottom: 5%;*/
+	margin-top: 0;
+	margin-bottom: -1%;
+	margin-left: -1%;
+	margin-right: -1%;
+}
+
+.close {
+	background-color: #606061;
+	color: #ffffff;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.close:hover{
+	background-color: #b50909;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	header, footer {
+		background-color: #2980b9;
+		padding: 2em;
+		margin: 0.3em 0;
+	}
+
+	nav {
+		background-color: #e67e22;
+		padding: 2em;
+		margin: 0.3em 0;
+	}
+
+	aside {
+		background-color: #d5d5d5;
+		padding: 2em;
+		margin: 0.3em 0;
+	}
+
+	section, main {
+		background-color: #ececec;
+		padding: 2em;
+		margin: 0.3em 0;
+	}
+
+	header {
+		/*atributo para diagramação com grid, ele apenas nomeia as marcações*/
+		grid-area: header;
+	}
+
+	nav#nav_principal {
+		grid-area: nav_principal;
+	}
+
+	section#destaque {
+		grid-area: destaque;
+	}
+
+	nav#nav_sec {
+		grid-area: nav_sec;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	aside {
+		grid-area: aside;
+	}
+
+	div.grid {
+		display: grid;
+		/*define a largura das colunas*/
+		grid-template-columns: 20% 80%;
+		/*altura das linhas*/
+		grid-template-rows: 5em 15em;
+		grid-template-areas:
+			"header nav_principal"
+			"destaque destaque"
+			"nav_sec main";
+	}
+
+	</style>
+</head>
+<body>
+	<div class="grid">
+		<header></header>
+
+		<nav id="nav_principal"></nav>
+		
+		<section id="destaque"></section>
+		
+		<nav id="nav_sec"></nav>
+		
+		<main></main>
+		
+		<aside></aside>
+	</div>
+
+	<footer></footer>
+
+</body>
+</html>

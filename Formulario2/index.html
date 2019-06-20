@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+	<meta charset="UTF-8"/>
+	<link type="text/css" rel="stylesheet" href="css/principal.css"/>
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="resposta.html" method="POST">
+		<fieldset>
+			<!--MARCAÇÃO DE FIELDSET É OPCIONAL-->
+			<legend>Identificação [COM TABELA]</legend>
+			<table>
+				<tr>
+					<div>
+						<!--LABEL É UM ROTULO-->
+						<td><label for="nome">Nome: </label></td>
+						<td><input type="text" name="login" id="login"/></td>
+					</div>
+				</tr>
+				<tr>
+					<div>
+						<td><label for="senha">Senha: </label></td>
+						<td><input type="password" name="senha" id="senha"/></td>
+					</div>
+				</tr>
+				<tr>
+					<div>
+						<td><label for="confsenha">Confirmar senha: </label></td>
+						<td><input type="password" name="confsenha" id="confsenha"/></td>
+					</div>
+				</tr>
+			</table>
+		</fieldset>
+		<br/>
+		<fieldset id="semTabela">
+			<legend>Identificação [SEM TABELA]</legend>
+			<div>
+				<label for="nome">Nome: </label>
+				<input type="text" name="login" id="login"/>
+			</div>
+			<div>
+				<label for="senha">Senha: </label>
+				<input type="password" name="senha" id="senha"/>
+			</div>
+			<div>
+				<label for="confsenha">Confirmar senha: </label>
+				<!--REQUIRED PLACEHOLDER DA UMA DICA DO QUE DEVE SER DIGITADO-->
+				<input type="password" required placeholder="A SENHA MIZERIA" name="confsenha" id="confsenha"/>
+			</div>
+		</fieldset>
+		<br/>
+		<fieldset id="semTabela">
+			<legend>Dados Pessoais</legend>
+			<div>
+				<label for="name">Nome: </label>
+				<input type="text" name="nome" id="nome"/>
+			</div>
+			<div>
+				<label for="email">Email: </label>
+				<!--TYPE EMAIL PEDE NO MINIMO XXX@XXX.XXX CARACTERES-->
+				<input type="email" name="email" id="email"/>
+			</div>
+			<div>
+				<label for="site">Site: </label>
+				<!--TYPE SITE PRECISA NO MINIMO XXX.XXX CARACTERES-->
+				<input type="site" name="site" id="site"/>
+			</div>
+			<div>
+				<label for="foto">Foto: </label>
+				<input type="file" name="foto" id="foto"/>
+			</div>
+			<div>
+				<label for="dnasc">Data de nascimento: </label>
+				<!--TYPE DATE COLOCA UM CALENDARIO-->
+				<input type="date" name="dnasc" id="dnasc"/>
+			</div>
+			<div>
+				<label for="pais">País: </label>
+				<input list="pais"/>
+				<datalist id="pais">
+					<option value="Casaquistão">Casaquistão</option>
+					<option value="Somalia">Somalia</option>
+					<option value="Guiana">Guiana</option>
+					<option value="SerraLeoa">Serra Leoa</option>
+					<option value="QueHamburguerEhEsse">Que Hamburguer é esse?</option>
+				</datalist>
+			</div>
+			<div>
+				<label for="city">Cidade: </label>
+				<select id="city" name="city" multiple/>
+					<option value="Jucurupinga">Jucurupinga</option>
+					<option value="Japecanga">Japecanga</option>
+				</select>
+			</div>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend>Nivel de burrice</legend>
+			<!--NO TYPE RADIO TODOS OS ITENS FICAM VISIVEIS, MAS SÓ PODE SELECIONAR UM. O NAME PRECISA TER O MESMO VALOR, E O VALUE É OBRIGATORIO-->
+			<label>
+				<input type="radio" name="escola" value="pronatec"/>Pronatec
+			</label>
+			<label>
+				<input type="radio" name="escola" value="medio"/>Médio
+			</label>
+			<label>
+				<input type="radio" name="escola" value="superior"/>Superior
+			</label>
+			<label>
+				<input type="radio" name="escola" value="mestre"/>Mestre
+			</label>
+			<label>
+				<input type="radio" name="escola" value="doto"/>Dotô
+			</label>
+		</fieldset>
+		<br/>
+		<input type="submit" value="Crique Aqui!"/>
+	</form>
+</body>
+</html>

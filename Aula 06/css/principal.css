@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f0f0f0;
+	font-family: arial, verdana;
+	font-size: 1em;
+}
+header{
+	background: linear-gradient(to left, #DAD299, #B0DAB9);
+	display: flex;
+}
+h1 a{
+	font-size: 2em;
+	color: white;
+	text-decoration: none;
+}
+header nav ol{
+	display: flex;
+}
+header nav ol li {
+	/*background-color: pink;*/
+	list-style-type: none;
+	padding: 1em;
+}
+header nav ol li a{
+	text-decoration:none;
+	color: black;
+}
+footer{
+	background-color: red;
+	margin: 2em;
+	margin: 2em 1em; top/bottom left/right
+	/*margin: 1em 2em 3em 4em;*/  /*top right bottom left*/
+	/*margin-top: 1em;
+	margin-right: 2em;
+	margin-bottom: 3em;
+	margin-left: 4em;*/
+	padding: 2em;
+	border: 1px solid black
+}

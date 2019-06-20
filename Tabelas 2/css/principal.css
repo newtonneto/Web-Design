@@ -1,0 +1,27 @@
+/* {
+	width: 100%
+}*/
+
+/*table {
+	border-spacing: 1 1em;
+}*/
+
+table {
+	width: 100%;
+	border-spacing: 0.5em 0.5em;
+}
+
+tbody tr:nth-child(even) {
+	background-color: black;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: blue;
+}
+
+td {
+	/*border: 0.05em solid black;*/
+	border-radius: 0.5em 0.5em;
+	color: white;
+	text-align: center;
+}

@@ -1,0 +1,20 @@
+body {
+	background-color: #000000;
+	color: green;
+}
+h1 {
+	background-color: white;
+	text-align: center;
+}
+h1 a{
+	color: #6b9cff;
+	text-decoration: none;
+	font-size: 2em;
+}
+h1 a:hover {
+	text-decoration: underline;
+}
+table, th, td {
+	border: 2px solid black;
+	border-color: green
+}

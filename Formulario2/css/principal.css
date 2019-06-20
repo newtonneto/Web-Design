@@ -1,0 +1,8 @@
+div {
+	padding: 0.25em;
+}
+
+#semTabela div label {
+	display: inline-block;
+	width: 10em;
+}

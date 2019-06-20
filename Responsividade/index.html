@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>DISPLAY-GRID 1</title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		div.grid{
+			display: grid;	
+			grid-template-columns: 30% 50% 20%;
+			grid-template-rows: 5em 15em 30em;
+			grid-template-areas:
+				"header nav_principal nav_principal" 
+				"destaque destaque destaque"
+				"nav_sec main aside";
+		}
+		header, footer{
+			background-color: #2980B9;
+			padding: 2em;
+			margin: 0.3em 0;
+		}
+		
+		nav{
+			background-color: #E67E22;
+			padding: 2em;
+			margin: 0.3em 0;
+		}
+		aside{
+			background-color: #D5D5D5;
+			padding: 2em;
+			margin: 0.3em 0;
+
+		}
+		section, main{
+			background-color: #ECECEC;
+			padding: 2em;
+			margin: 0.3em 0;
+		}
+
+		header{
+			grid-area: header;
+		}
+		nav#nav_principal{			
+			grid-area: nav_principal;
+		}		
+		section#destaque{
+			grid-area: destaque;
+
+		}
+		nav#nav_sec{
+			grid-area: nav_sec;
+
+		}
+		main{
+			grid-area: main;
+
+		}
+		aside{
+			grid-area: aside;
+
+		}
+		
+		@media screen and (max-width: 992px) {
+			main {
+				background-color: red;
+			}
+			
+			aside {
+				background-color: yellow;
+			}
+		}
+		
+		@media screen and (max-width: 768px) {
+			main {
+				background-color: purple;
+			}
+			div.grid {
+				grid-template-rows: 5em 10em 10em 10em 10em;
+				grid-template-areas:
+					"header nav_principal nav_principal"
+					"destaque destaque destaque"
+					"nav_sec nav_sec nav_sec"
+					"main main main"
+					"aside aside aside";
+			}
+		}
+		
+		@media screen and (max-width: 480px) {
+			main {
+				background-color: green;
+			}
+			div.grid {
+				grid-template-rows: 5em 10em 10em 10em 10em;
+				grid-template-areas:
+					"header nav_principal nav_principal"
+					"destaque destaque destaque"
+					"nav_sec nav_sec nav_sec"
+					"main main main"
+					"aside aside aside";
+			}
+		}
+		
+		@media screen and (orientation: landscape) {
+			main {
+			
+			}
+		}
+
+		div.grid {
+			position: relative;
+		}
+
+		div.banner {
+			width: 15em;
+			height: 15em;
+			background-color: green;
+			box-shadow: 0 0 5px 5px black;
+			position: absolute;
+			top: 15em;
+			left: 20em;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid">
+		<div class="banner">
+			<p>banner <a href="#">x</a></p>
+		</div>
+		<header></header>
+		<nav id="nav_principal"></nav>
+		<section id="destaque"><center>hehehe</center></section>
+		<nav id="nav_sec"></nav>
+		<main></main>
+		<aside></aside>
+	</div>
+
+	<footer></footer>
+</body>
+</html>
